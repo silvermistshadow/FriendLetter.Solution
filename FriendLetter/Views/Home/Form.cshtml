@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Create a Custom Postcard!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Fill in your name and your friend's name (and a couple other things) to create your custom postcard!</h1>
+    <p>Also put in the destination name and a short description of the destination and how it makes you feel.</p>
+    <p>An example of that: "Friend, you would not believe how cold it is here. I should have gone to Hawaii instead."</p>
+    <p>Finally, put in a souvenir that you might bring from the destination.</p>
+    <form action="/postcard" method="post">
+     <label for="sender">Sender's Name</label>
+     <input id="sender" name="sender" type="text">
+     <label for="recipient">Recipient's Name</label>
+     <input id="recipient" name="recipient" type="text">
+     <label for="destination">Destination name</label>
+     <input id="destination" name="destination" type="text">
+     <label for="destinationDesc">Destination description</label>
+     <input id="destinationDesc" name="destinationDesc" type="text">
+     <label for="souvenir">Souvenir</label>
+     <input id="souvenir" name="souvenir" type="text">
+     <button type="submit">Go!</button>
+    </form>
+  </body>
+</html>
